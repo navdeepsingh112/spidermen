@@ -65,3 +65,84 @@ animation-direction: reverse;
         
     }
 }
+.navbar{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    width: 100vw;
+    height:3.5rem;
+    z-index: 10;
+}
+.box{
+    border: 0.1rem solid white;
+    border-radius: 0.2rem;
+}
+.navitems{
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: white;
+    margin: 0.5rem;
+    padding:0.4rem;
+}
+#scorebox{
+    width: 8rem;
+    background-color: white;
+    height: 1.5rem;
+}
+#lifeline{
+    margin-left: 3.5rem;
+}
+#photo145{
+    position: absolute;
+    height: 6rem;
+    right: 0;
+    bottom: 0;
+    z-index: 12;
+}
+#realtime{
+    position: absolute;
+    height: 1rem;
+    width:11rem;
+    background-color: blue;
+    animation-name:time ;
+    animation-duration: 5s;
+}
+#timebox{
+    height: 1rem;
+    width:11rem;
+}
+@keyframes time{
+    0%{
+        width: 11rem;
+    }
+    100%{width: 0rem;
+        background-color: transparent;}
+}
+#villain{
+    z-index: 16;
+    position: absolute;
+    top: 7.7rem;
+    left: 8rem;
+    animation-name: villain;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+/* @keyframes villain{
+    25%{
+    transform: rotate(0)translate(6rem,3rem);
+    }
+    50%{
+    transform: rotate(0) translate();
+    }
+    75%{top: 10.7rem;
+        left: 16rem;
+    }
+    100%{
+        top: 7.7rem;
+    left: 8rem;
+    }
+} */
