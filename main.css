@@ -35,12 +35,13 @@ html,body{
     width: 100%;
 }
 .spidermen{
-    left: 74vw;
+    left: calc(75vw - 1.14319582741vh);
     position: absolute;
     z-index: 4;
-    top: 35vh;
+    top: 19vw;
     height: 4vh;
-    transform-origin: 2% -35vh;
+    /* transform-origin: 2% -35vh; */
+    transform-origin: calc(1.14319582741vh + 3px) calc(-19vw - 1px);
     transform: rotateZ(45deg);
     width: auto;
     animation: webswings 3000ms infinite;
@@ -48,7 +49,7 @@ html,body{
 }
 .web{
     width: 5px;
-    height: 37%;
+    height: 20vw;
     background-color: white;
     position: absolute;
     top : -1px;
