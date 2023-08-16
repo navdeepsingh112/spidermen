@@ -7,22 +7,16 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body class="container" id ="spiderman">
-    <div class="container">
+    <div class="container" id="gamecontainer">
     <div class="container containerbg">
         <img class="bgsun" src="shapes/107.png" alt="img">
         <img class="bgbuildings"src="shapes/111.png" alt="img">
         <img class="bgclouds" src="shapes/109.png" alt="img">
     </div>
-
-    <img src="/spidermen/shapes/190.png" alt="newbanda" id="villain">
-
-    <div>
-        <img class="spidermen" id="spidermans" src="shapes\114.png" alt="mujra" >
-    </div>
-    <div class="web webright" id="webr">
-    </div>
-    <div class="web webleft">
-    </div>
+ 
+    <div id="webrp"><div id="webrr"><div class="web webright" id="webr"></div><img class="spidermen ass" id="spidermans" src="shapes\114.png" alt="mujra"></div> </div>
+    <div id="weblp"><div id="weblr"><div class="web webleft"></div></div>
+        </div>
     </div>
     <footer>
         <div class="navbar">
@@ -31,12 +25,25 @@
                 <span id="realtime"></span>
             </span>
             <span class="navitems">score</span>
-            <span class="box" id="scorebox"></span>
+            <span class="box" id="scorebox">0</span>
             <span class="navitems" id="lifeline">Life</span>
-            <img src="/spidermen/shapes/145.png" alt="spiderman" id="photo145">
+            <img src="shapes/145.png" alt="spiderman" id="photo145">
         </div>
         </div>
     </footer>
+    <audio id="audiobg" loop>
+        <source src="sounds/180.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audiojump">
+        <source src="sounds/1_presssound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audiocau">
+        <source src="sounds/3_hitsound.wav" type="audio/wav">
+    </audio>
+    <audio id="audiod">
+        <source src="sounds/2_death.mp3" type="audio/mpeg">
+    </audio>
+    <div id="replay"></div>
 </body>
 <script src="script.js"></script>
 </html>

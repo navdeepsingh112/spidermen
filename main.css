@@ -35,45 +35,108 @@ html,body{
     width: 100%;
 }
 .spidermen{
-    left: calc(75vw - 1.14319582741vh);
+    /* left: calc(75vw - 1.14319582741vh); */
     position: absolute;
     z-index: 4;
-    top: 19vw;
+    top: 19.5vw;
     height: 4vh;
+    left: -1.14319582741vh;
     /* transform-origin: 2% -35vh; */
-    transform-origin: calc(1.14319582741vh + 3px) calc(-19vw - 1px);
-    transform: rotateZ(45deg);
+    /* transform-origin: calc(1.14319582741vh + 3px) calc(-19vw - 1px); */
+    /* transform: rotateZ(45deg); */
     width: auto;
-    animation: webswings 3000ms infinite;
+    /* animation: webswings 3000ms infinite; */
     
 }
 .web{
     width: 5px;
     height: 20vw;
     background-color: white;
-    position: absolute;
-    top : -1px;
+    /* */
+    
     
     border-radius: 2px;
     /* transform: rotateZ(-180deg); */
+    
+   
+    z-index: 3;
+    /* width: 100%; */
+    /* animation: webswings 3000ms infinite ; */
+    }
+#webrr{
+    /* position: absolute;
+    width: 5px;
+    left: 75%;
+    top: -1px; */
+    height: 20vw;
     transform-origin: top;
     transform: rotateX(180deg);
     transform: rotateZ(45deg);
+    animation: webswings 3000ms infinite;
+    /* translater 5000ms 1 forwards; */
+}
+#weblr{
     z-index: 3;
-    /* width: 100%; */
-    animation: webswings 3000ms infinite ;
+    /* position: absolute; */
+    /* width: 5px; */
+    /* top: -1px; */
+    height: 20vw;
+        transform-origin: top;
+        transform: rotateX(180deg);
+        transform: rotateZ(45deg);
+    /* left: 25%; */
+    animation: webswings 3000ms infinite;
+    /* animation:translatel 3000ms 1 forwards; */
+    /* animation-direction: reverse; */
+}
+#weblp{z-index: 3;
+position: absolute;
+width: 2.5px;
+top: -1px;
+left: 25%;
+
+}
+#webrp{z-index: 3;
+position: absolute;
+width: 2.5px;
+top: -1px;
+left: 75%;
+
+}
+.weblpa{
+    animation : translatel 3000ms 1 forwards;
+}
+.webrpa{
+    animation: translater 3000ms 1 forwards;;
+}
+/* .webright{}
+.webleft{
+} */
+@keyframes translatel {
+
+    100% {
+        left : 75%;
+
     }
-.webright{right: 25%;}
-.webleft{left: 25%;
-animation-direction: reverse;
+}
+@keyframes translater {
+    50.99%{
+        left: 105%;
+    }
+    51%{
+        left : -5%;
+    }
+    100% {
+        left: 25%;
+
+    } 
 }
 @keyframes webswings {
     50%{
-        /* height: 35%; */
+        
         transform: rotateZ(-45deg);
     }
     100%{
-        /* height: 37%; */
         transform: rotateZ(45deg);
         
     }
