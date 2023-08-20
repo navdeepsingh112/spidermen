@@ -207,6 +207,47 @@ left: 75%;
     animation-iteration-count: infinite;
     transition-timing-function: linear;
 }
+#replay{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0.5; */
+}
+#Play{
+    background-color: red;
+    /* width: 25%; */
+    /* height: 10%; */
+    font-size: 40px;
+    padding:  0 12.5% 0 12.5% ;
+    color: white;
+    /* margin: 0 37.5% 0 37.5%; */
+    border-radius: 10%;
+
+}
+#inputn{
+    display: none;
+}
+#spud{
+    width: 25%;
+    opacity: 60%;
+}
+
+#press{
+    background-color: red;
+    padding: 1%;
+}
+#Play:hover,
+#press:hover {
+    background-color: brown;
+}
 /* @keyframes villain{
     25%{
     transform: rotate(0)translate(6rem,3rem);

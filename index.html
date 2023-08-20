@@ -18,7 +18,7 @@
     <div id="weblp"><div id="weblr"><div class="web webleft"></div></div>
         </div>
     </div>
-    <footer>
+    <!-- <footer> -->
         <div class="navbar">
             <span class="navitems">time</span>
             <span class="box" id="timebox">
@@ -26,11 +26,14 @@
             </span>
             <span class="navitems">score</span>
             <span class="box" id="scorebox">0</span>
-            <span class="navitems" id="lifeline">Life</span>
+            <span class="navitems" id="lifeline">Best Score:</span>
+            <span class="navitems" id="bscore">5</span>
+            <span class="navitems" >Best Player:</span>
+            <span class="navitems" id="bplayer">Navdeep</span>
             <img src="shapes/145.png" alt="spiderman" id="photo145">
         </div>
         </div>
-    </footer>
+    <!-- </footer> -->
     <audio id="audiobg" loop>
         <source src="sounds/180.mp3" type="audio/mpeg">
     </audio>
@@ -43,7 +46,12 @@
     <audio id="audiod">
         <source src="sounds/2_death.mp3" type="audio/mpeg">
     </audio>
-    <div id="replay"></div>
+    <!-- replay screen-->
+    <div id="replay">
+        <img src="shapes/spud.png" alt="spud" id="spud">
+        <div id='Play' onclick="Play()">Play</div><br>
+        <div id="inputn"><input type="text" id="inputp"><span id="press" onclick="press()">press</span></div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
