@@ -1,5 +1,5 @@
 var aud=document.getElementById('audiobg');
-
+var time = document.getElementById('realtime');
 var spacebar = 1;
 var aud1 = document.getElementById('audiojump');
 var aud2 = document.getElementById('audiocau');
@@ -25,6 +25,8 @@ function Play(){
    spacebar=0;
    var elemene=document.getElementById('replay');
    elemene.style.zIndex='-2';
+   
+   time.style.animationName='time';
 }
 function replay(skit){
    aud.pause();
@@ -105,6 +107,7 @@ var r = Math.atan2(value[1], value[0]);
        skit=1  
       }
       replay(skit);
+      time.style.animationName='none';
       return true;
    }
 }
@@ -161,3 +164,6 @@ document.getElementById("spiderman").addEventListener('keyup', function(e)
     console.log("loss");
    }
 })
+time.addEventListener('animationend', () => {
+   bests>pbests?replay(1):replay(0);
+});

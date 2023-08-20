@@ -183,8 +183,8 @@ left: 75%;
     height: 1rem;
     width:11rem;
     background-color: blue;
-    animation-name:time ;
-    animation-duration: 5s;
+    animation-name:none ;
+    animation-duration: 10s;
 }
 #timebox{
     height: 1rem;
