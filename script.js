@@ -7,7 +7,7 @@ var aud3 = document.getElementById('audiod');
 var vel=0.59;
 var g=0.009;
 var score=0;
-var bests=0;
+var bests=5;
 // var bestp = "navdeep";
 var pbests=bests;
 function press(){
@@ -93,6 +93,7 @@ var r = Math.atan2(value[1], value[0]);
       web.parentElement.style.animation='translatel 3000ms 1 forwards';
       par.parentElement.style.animation ='translater 3000ms 1 forwards';
       spacebar = 0;
+      time.style.animationName='time';
       return true;
    } 
    else if(parseFloat(top)>window.innerHeight*0.75){
@@ -117,6 +118,7 @@ document.getElementById("spiderman").addEventListener('keyup', function(e)
    if(e.keyCode == 32 && spacebar == 0)
    {
       aud1.play();
+      time.style.animationName='none';
       spacebar = 1;
       g=0.1;
       var sp=document.getElementById(`spidermans`);
